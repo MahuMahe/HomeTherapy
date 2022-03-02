@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="HomeTherapy.Views.ContactUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeTherapy.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Images/ContactUs.png"></ImageBrush>
+    </UserControl.Background>
+    
+    <StackPanel Width="250" Height="350" HorizontalAlignment="Left" Margin="100 100 0 0">
+        
+        <RichTextBox Background="Transparent" BorderBrush="Transparent">
+            <FlowDocument>
+                <Paragraph TextAlignment="Justify">
+                    <Bold>
+                        <Run Text="Address"/>
+                    </Bold>
+                    <LineBreak/>
+                    <Run Text="Door No:37 2nd Street"/>
+                    <LineBreak/>
+                    <Run Text="Panampally Nagar"/>
+                    <LineBreak/>
+                    <Run Text="Kochi-683003"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>
+                        <Run Text="Phone Number"/>
+                    </Bold>
+                    <LineBreak/>
+                    <Run Text="8301937414"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>
+                        <Run Text="Email"/>
+                    </Bold>
+                    <LineBreak/>
+                    <Run Text="hometherapy@htc.com"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>
+                        <Run Text="Website"/>
+                    </Bold>
+                    <LineBreak/>
+                    <Run Text="www.hometherapy.com"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>
+                        <Run Text="Facebook"/>
+                    </Bold>
+                    <LineBreak/>
+                    <Run Text="www.facebook.com/hometherapy"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </StackPanel>
+</UserControl>

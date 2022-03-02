@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="HomeTherapy.Views.AboutUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeTherapy.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Images/Aboutus1.png"></ImageBrush>
+    </UserControl.Background>
+    <StackPanel Width="250" Height="350" HorizontalAlignment="Left" Margin="30 0 0 0">
+        <RichTextBox Background="Transparent" BorderBrush="Transparent">
+            <FlowDocument>
+                <Paragraph TextAlignment="Justify">
+                    <Run Text="Welcome to "/>
+                    <Bold>
+                        <Run Text="Home Therapy,"/>
+                        <LineBreak/>
+                    </Bold>
+                    <Run Text=" Home Therapy is an online platform that makes easier to book for Home Services. This Application is cool and easy way to book and find services around you. We make life simpler. you can book a range of services on our app from the comfort of your home. Our services include Plumber, Painter, Gardener, House Keeper, Interior Design etc."/>
+                    <LineBreak/>
+                    <Run Text="No more searching - we take the pain of searching for a service expert. No more asking your neighbors, No phone calls, No more internet search. just the Home Therapy App. Our partners are well experienced and background verified to ensure you get the best."/>
+                    <LineBreak/>
+                    <Run Text="In a world where you are running around wearing too many hats at the same time , wishing you had someone to help, someone you could confidently rely on, here comes "/>
+                    <Bold>
+                        <Run Text="HomeTherapy"/>
+                    </Bold>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </StackPanel>
+</UserControl>

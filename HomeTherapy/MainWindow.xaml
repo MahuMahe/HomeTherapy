@@ -1,0 +1,27 @@
+﻿<Window x:Class="HomeTherapy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTherapy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ContentControl Content="{Binding SelectedViewModel}"></ContentControl>
+        <Menu Name="UserHomePage" HorizontalAlignment="Right" VerticalAlignment="Top" Height="43" Background="{x:Null}">
+            <MenuItem Header="Home" Command="{Binding RedirectViewCommands}" CommandParameter="Home" FontWeight="Bold" Height="30" Width="80" Background="{x:Null}"></MenuItem>
+            <MenuItem Header="About Us" Command="{Binding RedirectViewCommands}" CommandParameter="AboutUs" FontWeight="Bold" Height="30" Width="80" Background="{x:Null}"></MenuItem>
+            <MenuItem Header="Contact Us" Command="{Binding RedirectViewCommands}" CommandParameter="ContactUs" FontWeight="Bold" Height="30" Width="80" Background="{x:Null}"></MenuItem>
+            <MenuItem Header="Categories" Command="{Binding RedirectViewCommands}" CommandParameter="Categories" FontWeight="Bold" Background="Transparent" Height="30" Width="80">
+                <MenuItem Header="Painting" Command="{Binding RedirectViewCommands}" Background="Transparent" CommandParameter="Painting"></MenuItem>
+                <MenuItem Header="Plumbing" Command="{Binding RedirectViewCommands}" CommandParameter="Plumbing"></MenuItem>
+                <MenuItem Header="House Keeping" Command="{Binding RedirectViewCommands}" CommandParameter="House Keeping"></MenuItem>
+                <MenuItem Header="Gardening" Command="{Binding RedirectViewCommands}" CommandParameter="Gardening"></MenuItem>
+                <MenuItem Header="Interior Design" Command="{Binding RedirectViewCommands}" CommandParameter="Interior Design"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Login Page" Command="{Binding RedirectViewCommands}" CommandParameter="LoginPage" FontWeight="Bold" Height="30" Width="80" Background="{x:Null}"></MenuItem>
+        </Menu>
+        <!--<Image Source="/Images/HomePageIcon.png" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 20 0 0" Opacity="0.6"/>-->
+
+    </Grid>
+</Window>

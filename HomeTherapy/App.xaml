@@ -1,0 +1,40 @@
+﻿<Application x:Class="HomeTherapy.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HomeTherapy"
+             StartupUri="MainWindow.xaml"
+             xmlns:views="clr-namespace:HomeTherapy.Views"
+             xmlns:modelView="clr-namespace:HomeTherapy.ViewModels">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type modelView:UserHomeViewModel}">
+            <views:UserHome/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:PaintingViewModel}">
+            <views:Painting/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:GardeningViewModel}">
+            <views:Gardening/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:HouseKeepingViewModel}">
+            <views:HouseKeeping/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:InteriorDesignViewModel}">
+            <views:InteriorDesign/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:PlumbingViewModel}">
+            <views:Plumbing/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:CategoriesViewModel}">
+            <views:Category/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:LoginPageViewModel}">
+            <views:LoginPage/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:AboutUsViewModel}">
+            <views:AboutUs/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type modelView:ContactUsViewModel}">
+            <views:ContactUs/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

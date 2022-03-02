@@ -1,0 +1,61 @@
+﻿<Page x:Class="HomeTherapy.Views.Category"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HomeTherapy.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Category">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/categorie.png"></ImageBrush>
+    </Page.Background>
+    <Grid>
+        <Grid Width="300" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10 40 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Add" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold"></Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="Category" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Sl No:" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" ></Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Width="120" Height="30"></TextBox>
+            <Label Grid.Row="2" Grid.Column="0" Content="Category" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" ></Label>
+            <TextBox Grid.Row="2" Grid.Column="1" Width="120" Height="30"></TextBox>
+            <Button Grid.Row="3" Grid.Column="1" Content="Add" Width="100" Height="30" Background="Transparent" FontWeight="Bold" Foreground="White" BorderBrush="Transparent"></Button>
+        </Grid>
+        <Grid Width="300" Height="200" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 40 30 0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Update" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold"></Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="Category" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Category" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" ></Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Width="120" Height="30"></TextBox>
+            <Button Grid.Row="2" Grid.Column="1" Content="Update" Width="100" Height="30" Background="Transparent" FontWeight="Bold" Foreground="White" BorderBrush="Transparent" VerticalAlignment="Top"></Button>
+        </Grid>
+        <Grid Width="300" Height="150" VerticalAlignment="Bottom" Background="Transparent" Margin="0 0 0 20">
+            <ListView Name="UserGrid" Grid.Row="1" Background="Transparent" BorderBrush="Transparent">
+                <DataGrid Name="grdReservationList" Background="Transparent" AutoGenerateColumns="False" Width="280" Height="154" BorderBrush="Transparent" ItemsSource="{Binding makeReservationList}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="SL No:" Foreground="White" FontWeight="Bold"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Category Name" Foreground="White" FontWeight="Bold"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>
