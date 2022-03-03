@@ -16,11 +16,11 @@ namespace HomeTherapy.Commands
         {
             this.model = viewModel;
         }
-
         public bool CanExecute(object parameter)
         {
             return true;
         }
+        //done
         public void Execute(object parameter)
         {
             if(parameter.ToString() == "Home")
